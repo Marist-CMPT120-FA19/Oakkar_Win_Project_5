@@ -1,0 +1,26 @@
+#Oakkar Win
+#oakkar.win1@marist.edu
+#This project will compute statistics for your sentence
+
+def main():
+    #description of the program
+    print("This program will compute statistics for your sentence")
+    
+    #input for user
+    sentence=str(input("Please enter your sentence: "))
+    #Split counts the number of words in the sentence individually
+    wordcount=len(sentence.split(" "))
+    #variable
+    avg=0
+    #loop
+    for x in sentence:
+        #Calculations
+        avg=avg+len(x)
+    avg=(avg-sentence.count(" "))/wordcount
+    
+    print ("Here are your\
+results")
+    print("# of characters:", len(sentence))
+    print("# of words:",  wordcount)
+    print("# of letters:", avg)
+main()
